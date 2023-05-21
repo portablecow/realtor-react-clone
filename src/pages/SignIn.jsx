@@ -26,6 +26,7 @@ export default function SignIn() {
       const auth = getAuth();
       const userCredentials = await signInWithEmailAndPassword(auth, email, password);
       if (userCredentials.user) {
+        console.log("user signed in");
         navigate("/");
       }
     } catch (error) {
