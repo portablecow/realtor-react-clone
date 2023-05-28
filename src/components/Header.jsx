@@ -25,7 +25,7 @@ export default function Header() {
         return false;
     }
   return (
-    <div className='bg-white border-b shadow-sm sticky top-0 z-50'>
+    <div className='bg-white border-b shadow-sm sticky top-0 z-40'>
         <header className='flex justify-between items-center px-3 max-w-6xl mx-auto'>
             <div>
             <img src='http://www.farts.com/wp-content/uploads/2023/03/farts_logo_1200_2.png' alt='logo' 
