@@ -4,6 +4,8 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router';
 import { toast } from 'react-toastify';
 import { db } from '../firebase';
+import {GiCampingTent} from "react-icons/gi";
+import { Link } from 'react-router-dom';
 
 export default function Profile() {
   const auth = getAuth();
@@ -80,6 +82,15 @@ export default function Profile() {
            </div>
 
         </form>
+        <button type="submit" className='w-full bg-green-500 text-white uppercase
+        px-7 py-3 text-sm font-medium rounded shadow-md hover:bg-green-600 transition
+        duration-150 ease-in-out hover:shadow-lg active:bg-green-700'>
+          <Link to="/create-listing" className='flex justify-center items-center'>
+          <GiCampingTent className='mr-2 text-3xl bg-orange-400 rounded-full p-1
+          border-2'/>
+          Sell or rent your home
+          </Link>  
+        </button>
       </div>
     </section>
     </>
